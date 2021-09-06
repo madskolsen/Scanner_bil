@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Skal vi finde din topfart?");
         System.out.println("Din bil har en topfart på " + fart);
         System.out.println("Skriv go for at starte bilen");
-        if (scanner.nextLine().equals("go")){
+        if (scanner.nextLine().equalsIgnoreCase("go")){
 
         System.out.println("Starter bilen...");
                 for (int i = 0; i<=fart; i++)
@@ -29,7 +29,7 @@ public class Main {
         System.out.println(i);}
             System.out.println("Skriv stop for at stoppe bilen");
         String stop = scanner.nextLine();
-        if (stop.equals("stop")){
+        if (stop.equalsIgnoreCase("stop")){
             for (int i = fart; i > 0 ; i--) {
                 System.out.println(i);}
                 System.out.println("Bilen er nu stillestående, god dag!");
