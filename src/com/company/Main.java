@@ -12,7 +12,7 @@ public class Main {
         String mærke = scanner.nextLine();
         System.out.println("Hvor mange hestekræfter har din bil?: ");
         int c = scanner.nextInt();
-        if (c<200){
+        if (c<2000){
             System.out.println("Din " + farve + " " + mærke + " er langsom");}
         else System.out.println("Din " + farve + " " + mærke + " er hurtig");
         System.out.println("Venter på go:");
